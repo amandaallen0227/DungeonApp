@@ -9,10 +9,9 @@ namespace DungeonLibrary
     public enum Race
     {
       Human,
-      Abaddon, // A Celesial being from a far another planet.
+      Abaddon, // A Celesial being from a far planet.
       Halfling, // half Abaddon half Igne
       Giants, // half human half abaddon
-      Igne // inspired by Igneous rock. There could be branches of diff. types of "monsters" from this one type of monster.
-
+      
     }
 }
