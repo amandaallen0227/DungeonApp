@@ -20,30 +20,25 @@ namespace DungeonLibrary
                 EquippedWeapon = equippedWeapon;
                 switch (PlayerRace)
                 {
-                    case Race.Dwarf:
+                    case Race.Human:
                         hitChance += 15;
                         block += 5;
                         MaxLife += 5;
                         break;
-                    case Race.Elf:
+                    case Race.Halfling:
                         hitChance += 8;
                         block += 15;
                         MaxLife += 5;
                         break;
-                    case Race.Human:
+                    case Race.Giants:
                         block += 10;
                         MaxLife += 15;
                         break;
-                    case Race.Gnome://Goblin -bigger strong higher hitdamage, low block
+                    case Race.Abaddon://Goblin -bigger strong higher hitdamage, low block
                         hitChance += 15;
                         block -= 3;
                         MaxLife += 15;
-                        break;
-                    case Race.Halfling:
-                        hitChance += 5;
-                        block += 5;
-                        MaxLife += 15;
-                        break;
+                        break;                
 
                 } //end switch
 
