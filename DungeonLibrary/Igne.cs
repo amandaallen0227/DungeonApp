@@ -12,5 +12,7 @@ namespace DungeonLibrary
 
         //description, hit count, block count, max life
         public Igne(string name, int hitChance, int block, int maxLife, int life, int minDamage, int maxDamage, string description)
+            : base(name, hitChance, block, maxLife, life, minDamage, maxDamage, description);
+
     } //end class
 } //end namespace

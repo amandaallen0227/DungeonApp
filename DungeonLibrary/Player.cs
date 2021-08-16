@@ -13,7 +13,7 @@ namespace DungeonLibrary
             public Race PlayerRace { get; set; }
             public Weapon EquippedWeapon { get; set; }
 
-            public Player(string name, int hitChance, int block, int life, int maxLife, Race playerRace, Weapon equippedWeapon)
+            public Player (string name, int hitChance, int block, int life, int maxLife, Race playerRace, Weapon equippedWeapon)
                 : base(name, hitChance, block, life, maxLife)
             {
                 PlayerRace = playerRace;
@@ -21,22 +21,23 @@ namespace DungeonLibrary
                 switch (PlayerRace)
                 {
                     case Race.Human:
+                        hitChance += 10;
+                        block += 8;
+                        MaxLife += 5;
+                        break;
+                    case Race.Halfling: // half Abaddon half Igne (half hero half enemy)
                         hitChance += 15;
-                        block += 5;
-                        MaxLife += 5;
+                        block += 25;
+                        MaxLife += 20;
                         break;
-                    case Race.Halfling:
-                        hitChance += 8;
-                        block += 15;
-                        MaxLife += 5;
-                        break;
-                    case Race.Giants:
+                    case Race.Giants: //half human half Abaddon
+                        hitChance += 20;
                         block += 10;
-                        MaxLife += 15;
+                        MaxLife += 5;
                         break;
-                    case Race.Abaddon://Goblin -bigger strong higher hitdamage, low block
-                        hitChance += 15;
-                        block -= 3;
+                    case Race.Abaddon: //the strongest alien race
+                        hitChance += 25;
+                        block -= 20;
                         MaxLife += 15;
                         break;                
 
