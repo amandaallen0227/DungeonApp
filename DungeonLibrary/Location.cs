@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DungeonLibrary
 {
-    class Location
+    public class Location
     {
         public static string GetLocation()
         {

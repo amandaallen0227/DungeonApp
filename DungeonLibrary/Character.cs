@@ -22,9 +22,7 @@ namespace DungeonLibrary
             set
             {
                 _life = value > MaxLife ? MaxLife : value;
-            } //end set
-           
-
+            } //end set           
 
         } //end life
 
@@ -36,11 +34,7 @@ namespace DungeonLibrary
             MaxLife = MaxLife;
             Life = life;
         } //end ctor
-
  
-
-
-
     } //end class
 
 } //end namespace

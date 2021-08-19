@@ -22,7 +22,7 @@ namespace DungeonLibrary
             } //end set
         } //end minDamage
 
-        public Monster(string name, int hitChance, int block, int maxLife, int life, int minDamage, int maxDamage, string description)
+        public Monster(string name, int hitChance, int block, int life, int maxLife, int minDamage, int maxDamage, string description)
             : base(name, hitChance, block, maxLife, life)
         {
             MaxDamage = maxDamage;
@@ -37,7 +37,7 @@ namespace DungeonLibrary
                 $"\nHit Chance: {HitChance}%\n" +
                 $"Block: {Block}%");
         } //end ToString()
-
+      
         //public override int CalcDamage()
         //{
         //    return new Random().Next(MinDamage, MaxDamage + 1);

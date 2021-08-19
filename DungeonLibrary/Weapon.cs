@@ -24,5 +24,23 @@ namespace DungeonLibrary
                 _minDamage = value > 0 && value <= MaxDamage ? value : 1;
             }
         }
+
+        public Weapon(string name, int bonusHitChance, int minDamage, int maxDamage)
+        {
+            MaxDamage = maxDamage;
+            Name = name;
+            BonusHitChance = bonusHitChance;
+            MinDamage = minDamage;
+            MaxDamage = maxDamage;
+        } //end CTOR
+
+        public override string ToString()
+        {
+            return string.Format($"{Name}\n " +
+                $"Damage: {MinDamage} to {MaxDamage}\n" +
+                $"Hit Modifier: {BonusHitChance}\n"); 
+        }
+
+
     } //end class
 } //end namespace
