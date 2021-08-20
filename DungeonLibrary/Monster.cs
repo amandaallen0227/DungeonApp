@@ -33,7 +33,7 @@ namespace DungeonLibrary
         public override string ToString()
         {
             return string.Format($"{Name}\n{Description}\n" +
-                $"Min-Max Life {Life} to {MaxLife}" +
+                $"Life: {Life} - {MaxLife}" +
                 $"\nHit Chance: {HitChance}%\n" +
                 $"Block: {Block}%");
         } //end ToString()

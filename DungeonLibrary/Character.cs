@@ -31,7 +31,7 @@ namespace DungeonLibrary
             Name = name;
             HitChance = hitChance;
             Block = block;
-            MaxLife = MaxLife;
+            MaxLife = maxLife;
             Life = life;
         } //end ctor
 

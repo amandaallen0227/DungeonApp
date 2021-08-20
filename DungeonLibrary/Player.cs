@@ -19,8 +19,9 @@ namespace DungeonLibrary
                 switch (PlayerRace)
                 {
                     case Race.Human:
-                        hitChance += 10;
-                        block += 8;
+                        hitChance += 15;
+                        block += 10;
+                        life += 2;
                         MaxLife += 12;
                         break;
                     case Race.Mongrel: // half Abaddon half Igne (half hero half enemy)
@@ -28,7 +29,7 @@ namespace DungeonLibrary
                         block += 25;
                         MaxLife += 20;
                         break;
-                    case Race.Giants: //half human half Abaddon
+                    case Race.Giant: //half human half Abaddon
                         hitChance += 20;
                         block += 10;
                         MaxLife += 5;

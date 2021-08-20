@@ -11,7 +11,7 @@ namespace DungeonLibrary
       Human,
       Abaddon, // A Celesial being from a far planet.
       Mongrel, // half Abaddon half Igne - maybe change name to Mongrel 
-      Giants, // half human half abaddon
+      Giant, // half human half abaddon
       
     }
 }
