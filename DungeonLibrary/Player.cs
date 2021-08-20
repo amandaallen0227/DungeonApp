@@ -48,17 +48,17 @@ namespace DungeonLibrary
                 return string.Format($"{Name}\nRace: {PlayerRace}\nWeapon: {EquippedWeapon}\nLife: {Life} to {MaxLife}\nHit Chance: {HitChance}%\n" + $"Block Chance: {Block}%");
             }
 
-            //public override int CalcDamage()
-            //{
-            //    Random rand = new Random();
-            //    int damage = rand.Next(EquippedWeapon.MinDamage, EquippedWeapon.MaxDamage + 1);
-            //    return damage;
-            //} //end method
+            public override int CalcDamage()
+            {
+                Random rand = new Random();
+                int damage = rand.Next(EquippedWeapon.MinDamage, EquippedWeapon.MaxDamage + 1);
+                return damage;
+            } //end method
 
-            //public override int CalcHitChance()
-            //{
-            //    return HitChance + EquippedWeapon.BonusHitChance;
-            //}
+            public override int CalcHitChance()
+            {
+                return HitChance + EquippedWeapon.BonusHitChance;
+            }
 
         } //end class
 

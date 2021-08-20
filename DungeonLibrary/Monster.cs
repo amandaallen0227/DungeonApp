@@ -38,10 +38,10 @@ namespace DungeonLibrary
                 $"Block: {Block}%");
         } //end ToString()
       
-        //public override int CalcDamage()
-        //{
-        //    return new Random().Next(MinDamage, MaxDamage + 1);
-        //}
+        public override int CalcDamage()
+        {
+            return new Random().Next(MinDamage, MaxDamage + 1);
+        }
 
 
     } //end class

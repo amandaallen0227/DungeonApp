@@ -34,7 +34,20 @@ namespace DungeonLibrary
             MaxLife = MaxLife;
             Life = life;
         } //end ctor
- 
+
+        public virtual int CalcBlock()
+        {
+            return Block;
+        } //end method 
+
+        public virtual int CalcHitChance()
+        {
+            return HitChance;
+        } //end method
+
+        public abstract int CalcDamage(); //method stub (has no body) we don't have any default functionality
+
+
     } //end class
 
 } //end namespace
