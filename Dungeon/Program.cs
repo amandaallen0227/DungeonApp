@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using DungeonLibrary;
 
 
-namespace Dungeon
+namespace DungeonApp
 {
-    public class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -87,6 +87,9 @@ namespace Dungeon
             bool exit = false;
             do
             {
+
+               
+
                 Console.WriteLine(Location.GetLocation());
                 Igne Scoria = new Igne("Scoria!", 23, 5, 15, 30, 10, 12, "A rock monster with a porus outerlay, dark and redish in color", true);
 
@@ -142,7 +145,7 @@ namespace Dungeon
                             Console.ForegroundColor = ConsoleColor.Yellow;
                             Console.WriteLine("Retreat!");
                             Console.ResetColor();
-                            Console.WriteLine($"The {monster.Name} attack you as your flee!");
+                            Console.WriteLine($"The {monster.Name} attack you as you flee!");
                             Combat.Attack(monster, player);
                             reload = true;
                             break;
@@ -174,13 +177,10 @@ namespace Dungeon
 
 
                 } while (!reload && !exit);
-            
-
+ 
 
             } while (!exit); //remember it is true that the exit is NOT true
 
-
-            //Need help figuring out how to loop this back to the top!
             bool replay = true;
             do
             {
@@ -193,16 +193,17 @@ namespace Dungeon
                 switch (userAnswer)
                 {
                     case ConsoleKey.Y:
-                        replay = true;
-                        break;              
+                        raceMenu = true;
+                        break;
 
                     default:
                         Console.WriteLine("Until we meet again...");
                         break;
-   
+
                 }
 
             } while (!replay && !exit);
+           
 
             Console.WriteLine("GAME OVER!");
             Console.ReadLine();
