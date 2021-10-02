@@ -27,6 +27,7 @@ namespace DungeonApp
             Console.Write("What is your name: ");
             heroName = Console.ReadLine();
             Console.Clear();
+            bool replay = true;
 
             bool raceMenu = true;
             do
@@ -68,7 +69,7 @@ namespace DungeonApp
 
 
 
-            } while (raceMenu);
+            
 
             Console.Clear();
 
@@ -181,7 +182,7 @@ namespace DungeonApp
 
             } while (!exit); //remember it is true that the exit is NOT true
 
-            bool replay = true;
+            
             do
             {
                 Console.Title = (" Game Over ");
@@ -203,8 +204,8 @@ namespace DungeonApp
                 }
 
             } while (!replay && !exit);
-           
 
+            } while (raceMenu);
             Console.WriteLine("GAME OVER!");
             Console.ReadLine();
             
